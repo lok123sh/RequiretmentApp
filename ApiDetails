@@ -1,0 +1,27 @@
+POST call to apply for job offer
+
+http://localhost:9090/application
+{
+    "offer":"devOps",
+    "email":"abc@gmail.com",
+    "resume": "I am software developer ",
+    "applicationStatus": "APPLIED"
+}
+
+Get call
+http://localhost:9090/application/byOffer/{offerName}
+http://localhost:9090/application/byUser/{User email}
+
+
+POST Call to create job offer
+
+http://localhost:9090/offer
+{
+	"jobTitle":"dev"
+}
+
+Get call
+http://localhost:9090/offer                find All Offer
+http://localhost:9090/offer/{offerName}    find Offer by offerName
+
+Prerequisite Before applying to any offer that offer should exists

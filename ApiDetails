@@ -1,8 +1,17 @@
+Prerequisite:::::::::
+
+1. Data will be persisted till application is running as I have not used any database so
+   Once application will restart You need to create data again.
+
+2. Try executing junits one by one if you will run all testcases then some test case will break because of AlreadyExists
+   Exception as I have not used any DB.   
+
+
 POST call to apply for job offer
 
 http://localhost:9090/application
 {
-    "offer":"devOps",
+    "offer":"JavaDeveloper",
     "email":"abc@gmail.com",
     "resume": "I am software developer ",
     "applicationStatus": "APPLIED"
@@ -17,11 +26,10 @@ POST Call to create job offer
 
 http://localhost:9090/offer
 {
-	"jobTitle":"dev"
+	"jobTitle":"JavaDeveloper"
 }
 
 Get call
 http://localhost:9090/offer                find All Offer
 http://localhost:9090/offer/{offerName}    find Offer by offerName
 
-Prerequisite Before applying to any offer that offer should exists
